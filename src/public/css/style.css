@@ -1,0 +1,26 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+}
+
+h1{
+    text-align: center;
+    color: bisque;
+    background-color: blue;
+}
+
+body{
+    background-color: rgb(32, 88, 88);
+}
+
+#accordionExample{
+	margin: 15px;
+}
+
+.accordion-item{
+	margin-bottom: 2px;
+}

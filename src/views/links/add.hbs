@@ -1,0 +1,23 @@
+<div class="containers">
+    <div class="formConteiner">
+        <form action="/links/add" method="post">
+            <input name="link" class="inp" id="inp" placeholder="insert link"/>
+            <input name="title" class="inp" id="inp2" placeholder="titulo"/>
+            
+            <input type="text" name="group" id="group" list="itemsGroup">
+            <datalist id="itemsGroup">
+                {{#each results}}
+                    <option value="{{this.title}}"></option>
+                {{/each}}
+
+            </datalist>
+
+            <button type="submit"  class="butt" id="butt">Add Page</button>
+
+
+
+            <button type="button" class="buttlist" id="buttlist">New list</button>
+
+        </form>
+    </div>
+</div>

@@ -1,0 +1,18 @@
+{{#each result}}
+  <div class="content" id="reverb">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#{{this.title}}"+"{{this.id}}" aria-expanded="true" aria-controls="{{this.title}}"+"{{this.id}}">
+          {{this.id}}
+        </button>
+      </h2>
+      <div id="{{this.title}}""{{this.id}}" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <a href="{{this.url}}">{{this.title}}{{this.description}}</a> 
+        </div>
+      </div>
+    </div>
+  </div>
+{{/each}}
+
+{{> footer_body }}
